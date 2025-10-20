@@ -1,0 +1,41 @@
+{
+  "Name": "antarctica_cube_basal_melt",
+  "Title": "Antarctica Cube Basal Melt variable",
+  "Description": "N/A",
+  "Themes": [
+    "Antarctic"
+  ],
+  "Resources": [
+    {
+      "Name": "COG source",
+      "Style": "basal_melt_style.json",
+      "Bbox": [
+        -180,
+        -90,
+        180,
+        -60
+      ],
+      "TimeEntries": [
+        {
+          "Time": "20250101",
+          "Assets": [
+            {
+              "Identifier": "Basal_melt",
+              "File": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/basal_meltcog.tif"
+            }
+          ]
+        }
+      ],
+      "DataProjection": {
+        "name": "EPSG:3031",
+        "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+        "extent": [-3299207.53, -3333134.03, 3299207.53, 3333134.03]
+      }
+    }
+  ],
+  "MapProjection": {
+    "name": "EPSG:3031",
+    "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+    "extent": [-3299207.53, -3333134.03, 3299207.53, 3333134.03]
+  }
+}

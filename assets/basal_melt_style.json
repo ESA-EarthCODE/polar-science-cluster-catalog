@@ -1,0 +1,57 @@
+{
+    "legend": {
+        "title": "Basal Melt",
+        "range": [
+            "rgba(0, 0, 0, 1)",
+            "rgba(255, 255, 255, 1)"
+        ],
+        "domainProperties": ["vmin", "vmax"]
+    },
+    "variables": {
+        "vmin": -3,
+        "vmax": 2
+    },
+    "color": [
+        "case",
+        [">", ["band", 1], 0],
+        [
+            "interpolate",
+            ["linear"],
+            [
+                "/",
+                ["-", ["band", 1], ["var", "vmin"]],
+                ["-", ["var", "vmax"], ["var", "vmin"]]
+            ],
+            0,
+            [0, 0, 0, 1],
+            1,
+            [255, 255, 255, 1]
+        ],
+        ["color", 0, 0, 0, 0]
+    ],
+    "jsonform": {
+        "type": "object",
+        "title": "Data configuration",
+        "properties": {
+            "vminmax": {
+                "title": "Basal Melt",
+                "type": "object",
+                "properties": {
+                    "vmin": {
+                        "type": "number",
+                        "minimum": -3,
+                        "format": "range",
+                        "default": -3
+                    },
+                    "vmax": {
+                        "type": "number",
+                        "maximum": 2,
+                        "format": "range",
+                        "default": 2
+                    }
+                },
+                "format": "minmax"
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "polar-science-cluster",
+  "title": "Polar Science Cluster Catalog",
+  "description": "Polar Science Cluster",
+    "endpoint": "https://ESA-EarthCODE.github.io/polar-science-cluster-catalog/polar-science-cluster/",
+  "default_base_layers": "layers/baselayers",
+  "default_overlay_layers": "layers/overlays",
+  "assets_endpoint": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets",
+  "collections": [
+    "antarctica_cube_basal_melt"
+  ]
+}
