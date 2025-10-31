@@ -109,7 +109,6 @@
       "title": "Antarctica InSync Catalog"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/ac_groundlines_date1.png",
   "themes": [
     "Antarctic"
   ],
@@ -148,16 +147,12 @@
   "summaries": {
     "themes": [
       "Antarctic"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/ac_groundlines_date1.png"
     ]
   },
   "assets": {
-    "thumbnail": {
-      "href": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/ac_groundlines_date1.png",
-      "type": "image/png",
-      "roles": [
-        "thumbnail"
-      ]
-    },
     "reference_1": {
       "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3291177478-NSIDC_CPRD",
       "type": "text/html",

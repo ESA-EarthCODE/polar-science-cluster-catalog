@@ -193,7 +193,6 @@
       "title": "Antarctica InSync Catalog"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/ac_bedrock_topography.png",
   "themes": [
     "Antarctic"
   ],
@@ -232,16 +231,12 @@
   "summaries": {
     "themes": [
       "Antarctic"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/ac_bedrock_topography.png"
     ]
   },
   "assets": {
-    "thumbnail": {
-      "href": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/ac_bedrock_topography.png",
-      "type": "image/png",
-      "roles": [
-        "thumbnail"
-      ]
-    },
     "reference_1": {
       "href": "https://opensciencedata.esa.int/products/bedrock-topography-antarctica-bedmachine/collection",
       "type": "text/html",
