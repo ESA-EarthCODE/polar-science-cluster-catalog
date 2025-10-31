@@ -1,0 +1,52 @@
+{
+    "legend": {
+        "title": "Ice thickness [m]",
+        "range": [
+            "rgba(255, 0, 0, 1)",
+            "rgba(0, 0, 255, 1)"
+        ],
+        "domainProperties": ["vmin", "vmax"]
+    },
+    "variables": {
+        "vmin": 0,
+        "vmax": 5000
+    },
+    "color": [
+        "interpolate",
+        ["linear"],
+        [
+            "/",
+            ["-", ["band", 1], ["var", "vmin"]],
+            ["-", ["var", "vmax"], ["var", "vmin"]]
+        ],
+        0,
+        [255, 0, 0, 1],
+        1,
+        [0, 0, 255, 1]
+    ],
+    "jsonform": {
+        "type": "object",
+        "title": "Data configuration",
+        "properties": {
+            "vminmax": {
+                "title": "",
+                "type": "object",
+                "properties": {
+                    "vmin": {
+                        "type": "number",
+                        "minimum": 0,
+                        "format": "range",
+                        "default": 0
+                    },
+                    "vmax": {
+                        "type": "number",
+                        "maximum": 5000,
+                        "format": "range",
+                        "default": 5000
+                    }
+                },
+                "format": "minmax"
+            }
+        }
+    }
+}

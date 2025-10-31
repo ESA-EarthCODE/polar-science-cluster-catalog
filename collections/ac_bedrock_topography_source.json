@@ -1,6 +1,6 @@
 {
-  "Name": "ac_bedrock_topography_dataid",
-  "Title": "Input Data Source",
+  "Name": "ac_bedrock_topography_source",
+  "Title": "Output Data Source",
   "Description": "",
   "Themes": [
     "Antarctic"
@@ -18,7 +18,7 @@
   "Resources": [
     {
       "Name": "COG source",
-      "Style": "bedrock_topography_dataid_style.json",
+      "Style": "bedrock_topography_source_style.json",
       "Bbox": [
         -180,
         -90,
@@ -30,8 +30,8 @@
           "Time": "20250101",
           "Assets": [
             {
-              "Identifier": "bedrock_topography_dataid",
-              "File": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/cogs/bedrock_topography_dataid.tif"
+              "Identifier": "bedrock_topography_source",
+              "File": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/cogs/bedrock_topography_source.tif"
             }
           ]
         }
@@ -49,15 +49,18 @@
     "extent": [-3299207.53, -3333134.03, 3299207.53, 3333134.03]
   },
   "Colorlegend": {
-      "title": "Input Data Source Id",
+      "title": "Output Data Source Id",
       "range": [
-          "rgba(0, 0, 0, 0)",
           "rgb(0, 0, 255)",
           "rgb(255, 255, 0)",
+          "rgb(255, 0, 0)",
+          "rgb(255, 0, 255)",
+          "rgb(230, 230, 230)",
+          "rgb(120, 120, 120)",
           "rgb(0, 255, 0)",
           "rgb(0, 255, 255)"
       ],
       "scaleType": "categorical",
-      "domain": ["No data (0)", "REMA (1)", "Radar (2)", "Seismic (7)", "multibeam (10)"]
+      "domain": ["REMA/IBCSO V2 (1)", "Mass Conservation (2)", "Interpolation (3)", "Hydrostatic (4)", "Streamline Diffusion (5)", "Gravity (6)", "Seismic (7)", "multibeam (10)"]
   }
 }

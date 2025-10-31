@@ -1,6 +1,6 @@
 {
   "Name": "ac_bedrock_topography_dataid",
-  "Title": "Input Data Source Id",
+  "Title": "Ocean ice land mask",
   "Description": "",
   "Themes": [
     "Antarctic"
