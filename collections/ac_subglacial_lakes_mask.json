@@ -15,6 +15,7 @@
       "Url": "https://www.nature.com/articles/s41467-025-63773-9"
     }
   ],
+  "Image": "ac_subglacial_lakes_mask.png",
   "Resources": [
     {
       "Name": "COG source",

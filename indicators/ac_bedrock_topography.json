@@ -15,6 +15,7 @@
       "Url": "https://nsidc.org/data/nsidc-0756/versions/3"
     }
   ],
+  "Image": "ac_bedrock_topography.png",
   "Collections": ["ac_bedrock_topography_bed", "ac_bedrock_topography_errbed", "ac_bedrock_topography_firn", "ac_bedrock_topography_geoid", "ac_bedrock_topography_surface", "ac_bedrock_topography_thickness"],
   "MapProjection": {
     "name": "EPSG:3031",
