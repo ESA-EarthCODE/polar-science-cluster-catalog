@@ -1,0 +1,51 @@
+{
+  "Name": "ac_subglacial_lakes_mask",
+  "Title": "Subglacial Lakes",
+  "Description": "Subglacial lake activity influences ice sheet flow, grounding line discharge and ice shelf basal melting. Although 146 active subglacial lakes have been detected in Antarctica via ice surface elevation change associated with their activity, only 36 fill-drain cycles have been observed worldwide, and knowledge of these mechanisms is limited. Here, we use a decade of CryoSat-2 radar altimetry to detect 85 active subglacial lakes in Antarctica, documenting 37 and 34 complete draining and filling events respectively. We delineate time-varying boundaries of subglacial lake activity and investigate their variability over time. Our observations increase the number of known active subglacial lakes in Antarctica by 58%, with six of these located within 8 km of the grounding zone. We observe five subglacial lake networks, with concurrent upstream drainage and downstream filling, and 25 clusters of lakes, improving our knowledge of interconnected subglacial hydrological pathways.",
+  "Themes": [
+    "Antarctic"
+  ],
+  "References": [
+    {
+      "Name": "Data for Detection of 85 new active subglacial lakes in Antarctica from a decade of CryoSat-2 data",
+      "Url": "https://zenodo.org/records/16330565"
+    },
+    {
+      "Name": "Detection of 85 new active subglacial lakes in Antarctica from a decade of CryoSat-2 data | Nature Communications",
+      "Url": "https://www.nature.com/articles/s41467-025-63773-9"
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "COG source",
+      "Style": "subglacial_lakes_mask_style.json",
+      "Bbox": [
+        -180,
+        -90,
+        180,
+        -60
+      ],
+      "TimeEntries": [
+        {
+          "Time": "20250101",
+          "Assets": [
+            {
+              "Identifier": "subglacial_lakes_mask",
+              "File": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/cogs/subglacial_lakes_mask.tif"
+            }
+          ]
+        }
+      ],
+      "DataProjection": {
+        "name": "EPSG:3031",
+        "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+        "extent": [-3299207.53, -3333134.03, 3299207.53, 3333134.03]
+      }
+    }
+  ],
+  "MapProjection": {
+    "name": "EPSG:3031",
+    "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+    "extent": [-3299207.53, -3333134.03, 3299207.53, 3333134.03]
+  }
+}

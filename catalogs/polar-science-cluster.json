@@ -8,6 +8,8 @@
   "assets_endpoint": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets",
   "collections": [
     "ac_basal_melt",
-    "ac_bedrock_topography"
+    "ac_bedrock_topography",
+    "ac_subglacial_lakes_mask",
+    "ac_supra_glacial_lakes_mask"
   ]
 }
