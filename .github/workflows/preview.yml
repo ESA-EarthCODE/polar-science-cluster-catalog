@@ -84,7 +84,7 @@ jobs:
           body: |
             🚀 Preview ready!
 
-            👉 [View your dashboard preview](https://eodash.github.io/preview-instance/?stacEndpoint=https://gtif-ukif.github.io/gtif-ukif-catalog/pr-preview/pr-${{ github.event.pull_request.number }}/gtif-ukif/catalog.json )
+            👉 [View your dashboard preview](https://eodash.github.io/preview-instance/?stacEndpoint=https://ESA-EarthCODE.github.io/polar-science-cluster-catalog/pr-preview/pr-${{ github.event.pull_request.number }}/polar-science-cluster/catalog.json )
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
           edit-mode: replace
       -
