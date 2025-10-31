@@ -19,12 +19,7 @@
     {
       "Name": "COG source",
       "Style": "subglacial_lakes_mask_style.json",
-      "Bbox": [
-        -180,
-        -90,
-        180,
-        -60
-      ],
+      "Bbox": [-50, -85, -90, -75],
       "TimeEntries": [
         {
           "Time": "20250101",
@@ -47,5 +42,11 @@
     "name": "EPSG:3031",
     "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
     "extent": [-3299207.53, -3333134.03, 3299207.53, 3333134.03]
+  },
+  "Colorlegend": {
+    "title": "Mask",
+    "range": ["rgb(0, 0, 0)"],
+    "scaleType": "categorical",
+    "domain": ["subglacial lake"]
   }
 }

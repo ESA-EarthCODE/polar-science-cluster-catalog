@@ -19,12 +19,7 @@
     {
       "Name": "COG source",
       "Style": "bedrock_topography_geoid_style.json",
-      "Bbox": [
-        -180,
-        -90,
-        180,
-        -60
-      ],
+      "Bbox": [-50, -85, -90, -75],
       "TimeEntries": [
         {
           "Time": "20250101",
