@@ -1,8 +1,8 @@
 {
   "type": "Collection",
-  "id": "ac_bedrock_topography",
+  "id": "antarctica_cube_basal_melt",
   "stac_version": "1.1.0",
-  "description": "This data set contains a bed topography/bathymetry map of Antarctica deduced by subtracting the ice thickness from the surface elevation taken from the Reference Elevation Model of Antarctica (REMA). Ice thickness is derived via mass conservation, streamline diffusion, and other methods. Ice thicknesss and ice surface elevations are reported in ice equivalent (heights above mean sea level using the EIGEN-6C4 geoid) to account for firn air content. Additional parameters include errors in the ice thicknesses/bed estimates; the firn correction parameter; geoid height difference from the WGS84 ellipsoid; and an ice/ocean/land mask. A source map is also provided that shows where each method was applied",
+  "description": "Ice shelf basal melt rate datasets derived from CryoSat-2 radar altimetry swath processing between 2010-2021. The ice shelf mask and ice shelf thickness are from BedMachine Antarctica, the ice velocity is an ITS_LIVE composite, and the SMB and firn air content are from RACMO2.3p2 and the IMAU firn densification model, respectively.",
   "links": [
     {
       "rel": "root",
@@ -12,11 +12,11 @@
     },
     {
       "rel": "child",
-      "href": "./ac_bedrock_topography_dataid/collection.json",
+      "href": "./antarctica_cube_basal_melt/collection.json",
       "type": "application/json",
-      "title": "Bedrock topography Input Data Source Id",
+      "title": "Ice shelf Basal Melt Rate",
       "endpointtype": "COG source",
-      "id": "ac_bedrock_topography_dataid",
+      "id": "antarctica_cube_basal_melt",
       "themes": [
         "Antarctic"
       ],
@@ -101,7 +101,7 @@
       3333134.03
     ]
   },
-  "title": "Bedrock topography",
+  "title": "Ice shelf Basal Melt Rate",
   "extent": {
     "spatial": {
       "bbox": [
@@ -130,17 +130,17 @@
   },
   "assets": {
     "reference_1": {
-      "href": "https://opensciencedata.esa.int/products/bedrock-topography-antarctica-bedmachine/collection",
+      "href": "https://zenodo.org/records/8052519",
       "type": "text/html",
-      "title": "Original Data Source | ESA Open Science Catalog",
+      "title": "Original Data Source",
       "roles": [
         "metadata"
       ]
     },
     "reference_2": {
-      "href": "https://nsidc.org/data/nsidc-0756/versions/3",
+      "href": "https://www.science.org/doi/10.1126/sciadv.adi0186",
       "type": "text/html",
-      "title": "MEaSUREs BedMachine Antarctica, Version 3 | National Snow and Ice Data Center",
+      "title": "Reference",
       "roles": [
         "metadata"
       ]
