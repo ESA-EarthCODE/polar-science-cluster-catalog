@@ -1,5 +1,5 @@
 {
-  "Name": "ac_groundlines_sensor",
+  "Name": "ac_groundlines_mask",
   "Title": "Antarctica Groundlines sensor",
   "Description": "Grounding lines for the Antarctic Ice Sheet were derived using differential satellite synthetic aperture radar interferometry (DInSAR) data for the years 1992 to 2014 from the Earth Remote Sensing Satellites 1 and 2 (ERS-1 and ERS-2), RADARSAT and RADARSAT-2, the Advanced Land Observing System (ALOS) PALSAR, COSMO Skymed, and Sentinel-1A.",
   "Themes": [
@@ -22,7 +22,7 @@
   "Resources": [
     {
       "Name": "COG source",
-      "Style": "groundlines_sensor_style.json",
+      "Style": "groundlines_mask_style.json",
       "Bbox": [
         -180,
         -90,
@@ -34,8 +34,8 @@
           "Time": "20250101",
           "Assets": [
             {
-              "Identifier": "groundlines_sensor",
-              "File": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/cogs/groundlines_sensor.tif"
+              "Identifier": "groundlines_mask",
+              "File": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/cogs/groundlines_mask.tif"
             }
           ]
         }
@@ -51,18 +51,4 @@
     "name": "EPSG:3031",
     "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
     "extent": [-3299207.53, -3333134.03, 3299207.53, 3333134.03]
-  },
-  "Colorlegend": {
-      "title": "Groundlines sensor",
-      "range": [
-          "rgb(0, 0, 255)",
-          "rgb(255, 255, 0)",
-          "rgb(0, 255, 0)",
-          "rgb(255, 0, 255)",
-          "rgb(255, 0, 0)",
-          "rgb(0, 255, 255)"
-      ],
-      "scaleType": "categorical",
-      "domain": ["ERS 1, 2", "RADARSAT-1", "RADARSAT-2", "PALSAR", "COSMO SkyMed", "Sentinel-1A"]
   }
-}

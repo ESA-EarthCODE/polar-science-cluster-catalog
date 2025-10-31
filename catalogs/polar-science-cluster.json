@@ -11,6 +11,6 @@
     "ac_bedrock_topography",
     "ac_subglacial_lakes_mask",
     "ac_supra_glacial_lakes_mask",
-    "ac_groundlines_sensor"
+    "ac_groundlines"
   ]
 }
