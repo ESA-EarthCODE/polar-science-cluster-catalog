@@ -12,11 +12,11 @@
     },
     {
       "rel": "child",
-      "href": "./ac_groundlines_mask/collection.json",
+      "href": "./ac_groundlines_date1/collection.json",
       "type": "application/json",
-      "title": "Antarctica Groundlines sensor",
+      "title": "Grounding Lines Year",
       "endpointtype": "COG source",
-      "id": "ac_groundlines_mask",
+      "id": "ac_groundlines_date1",
       "themes": [
         "Antarctic"
       ],
@@ -33,11 +33,11 @@
     },
     {
       "rel": "child",
-      "href": "./ac_groundlines_date1/collection.json",
+      "href": "./ac_groundlines_mask/collection.json",
       "type": "application/json",
-      "title": "Grounding lines Date",
+      "title": "Grounding lines Mask",
       "endpointtype": "COG source",
-      "id": "ac_groundlines_date1",
+      "id": "ac_groundlines_mask",
       "themes": [
         "Antarctic"
       ],
@@ -122,7 +122,7 @@
       3333134.03
     ]
   },
-  "title": "MEaSUREs Antarctic Grounding Line from DInSAR",
+  "title": "Grounding Lines from DInSAR",
   "extent": {
     "spatial": {
       "bbox": [
@@ -137,8 +137,8 @@
     "temporal": {
       "interval": [
         [
-          "2025-01-01T00:00:00Z",
-          "2025-01-01T00:00:00Z"
+          "1992-01-01T00:00:00Z",
+          "2014-01-01T00:00:00Z"
         ]
       ]
     }

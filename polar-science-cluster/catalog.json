@@ -94,7 +94,7 @@
       "rel": "child",
       "href": "./ac_groundlines/collection.json",
       "type": "application/json",
-      "title": "MEaSUREs Antarctic Grounding Line from DInSAR",
+      "title": "Grounding Lines from DInSAR",
       "id": "ac_groundlines",
       "themes": [
         "Antarctic"
