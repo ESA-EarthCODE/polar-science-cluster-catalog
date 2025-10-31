@@ -34,6 +34,7 @@
       "title": "Subglacial Lakes"
     }
   ],
+  "thumbnail": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/ac_subglacial_lakes_mask.png",
   "themes": [
     "Antarctic"
   ],
@@ -91,6 +92,13 @@
   },
   "license": "other",
   "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/ac_subglacial_lakes_mask.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
     "reference_1": {
       "href": "https://zenodo.org/records/16330565",
       "type": "text/html",

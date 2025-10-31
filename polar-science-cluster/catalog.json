@@ -19,6 +19,9 @@
       "themes": [
         "Antarctic"
       ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/ac_basal_melt.png"
+      ],
       "eodash:mapProjection": {
         "name": "EPSG:3031",
         "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
@@ -59,6 +62,9 @@
       "themes": [
         "Antarctic"
       ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/ac_subglacial_lakes_mask.png"
+      ],
       "eodash:mapProjection": {
         "name": "EPSG:3031",
         "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
@@ -78,6 +84,9 @@
       "id": "ac_supra_glacial_lakes_mask",
       "themes": [
         "Antarctic"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/ac_supra_glacial_lakes_mask.png"
       ],
       "eodash:mapProjection": {
         "name": "EPSG:3031",

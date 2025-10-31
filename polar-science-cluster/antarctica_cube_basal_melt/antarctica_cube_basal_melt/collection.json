@@ -34,6 +34,7 @@
       "title": "Ice shelf Basal Melt Rate"
     }
   ],
+  "thumbnail": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/ac_basal_melt.png",
   "themes": [
     "Antarctic"
   ],
@@ -81,6 +82,13 @@
   },
   "license": "other",
   "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/ac_basal_melt.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
     "reference_1": {
       "href": "https://zenodo.org/records/8052519",
       "type": "text/html",

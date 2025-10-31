@@ -88,6 +88,7 @@
       "title": "Antarctica InSync Catalog"
     }
   ],
+  "thumbnail": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/ac_supra_glacial_lakes_mask.png",
   "themes": [
     "Antarctic"
   ],
@@ -136,9 +137,19 @@
   "summaries": {
     "themes": [
       "Antarctic"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/ac_supra_glacial_lakes_mask.png"
     ]
   },
   "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/ac_supra_glacial_lakes_mask.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
     "reference_1": {
       "href": "https://zenodo.org/record/5642755",
       "type": "text/html",
