@@ -1,9 +1,19 @@
 {
   "Name": "antarctica_cube_basal_melt",
-  "Title": "Antarctica Cube Basal Melt variable",
-  "Description": "N/A",
+  "Title": "Ice shelf Basal Melt Rate",
+  "Description": "Ice shelf basal melt rate datasets derived from CryoSat-2 radar altimetry swath processing between 2010-2021. The ice shelf mask and ice shelf thickness are from BedMachine Antarctica, the ice velocity is an ITS_LIVE composite, and the SMB and firn air content are from RACMO2.3p2 and the IMAU firn densification model, respectively.",
   "Themes": [
     "Antarctic"
+  ],
+  "References": [
+    {
+      "Name": "Original Data Source",
+      "Url": "https://zenodo.org/records/8052519"
+    },
+    {
+      "Name": "Reference",
+      "Url": "https://www.science.org/doi/10.1126/sciadv.adi0186"
+    }
   ],
   "Resources": [
     {
@@ -21,7 +31,7 @@
           "Assets": [
             {
               "Identifier": "Basal_melt",
-              "File": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/basal_meltcog.tif"
+              "File": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/cogs/ice_shelf_basal_melt_rate.tif"
             }
           ]
         }
