@@ -51,6 +51,46 @@
       }
     },
     {
+      "rel": "child",
+      "href": "./ac_subglacial_lakes_mask/collection.json",
+      "type": "application/json",
+      "title": "Subglacial Lakes",
+      "id": "ac_subglacial_lakes_mask",
+      "themes": [
+        "Antarctic"
+      ],
+      "eodash:mapProjection": {
+        "name": "EPSG:3031",
+        "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+        "extent": [
+          -3299207.53,
+          -3333134.03,
+          3299207.53,
+          3333134.03
+        ]
+      }
+    },
+    {
+      "rel": "child",
+      "href": "./ac_supra_glacial_lakes_mask/collection.json",
+      "type": "application/json",
+      "title": "Supraglacial Lakes",
+      "id": "ac_supra_glacial_lakes_mask",
+      "themes": [
+        "Antarctic"
+      ],
+      "eodash:mapProjection": {
+        "name": "EPSG:3031",
+        "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+        "extent": [
+          -3299207.53,
+          -3333134.03,
+          3299207.53,
+          3333134.03
+        ]
+      }
+    },
+    {
       "rel": "self",
       "href": "https://ESA-EarthCODE.github.io/polar-science-cluster-catalog/polar-science-cluster/catalog.json",
       "type": "application/json"

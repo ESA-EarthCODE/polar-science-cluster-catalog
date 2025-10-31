@@ -1,0 +1,101 @@
+{
+  "type": "Collection",
+  "id": "ac_supra_glacial_lakes_mask",
+  "stac_version": "1.1.0",
+  "description": "Quantifying the extent and distribution of supraglacial hydrology, i.e. lakes and streams, is important for understanding the mass balance of the Antarctic ice sheet and its consequent contribution to global sea-level rise. The existence of meltwater on the ice surface has the potential to affect ice shelf stability and grounded ice flow through hydrofracturing and the associated delivery of meltwater to the bed. In this study, we systematically map all observable supraglacial lakes and streams in West Antarctica by applying a semi-automated Dual-NDWI (normalised difference water index) approach to >2000 images acquired by the Sentinel-2 and Landsat-8 satellites during January 2017. We use a K-means clustering method to partition water into lakes and streams, which is important for understanding the dynamics and inter-connectivity of the hydrological system. When compared to a manually delineated reference dataset on three Antarctic test sites, our approach achieves average values for sensitivity (85.3 % and 77.6 %), specificity (99.1 % and 99.7 %) and accuracy (98.7 % and 98.3 %) for Sentinel-2 and Landsat-8 acquisitions, respectively. We identified 10 478 supraglacial features (10 223 lakes and 255 channels) on the West Antarctic Ice Sheet (WAIS) and Antarctic Peninsula (AP), with a combined area of 119.4 km2 (114.7 km2 lakes, 4.7 km2 channels). We found 27.3 % of feature area on grounded ice and 54.9 % on floating ice shelves. In total, 17.8 % of feature area crossed the grounding line. A recent expansion in satellite data provision made new continental-scale inventories such as these, the first produced for WAIS and AP, possible. The inventories provide a baseline for future studies and a benchmark to monitor the development of Antarctica's surface hydrology in a warming world and thus enhance our capability to predict the collapse of ice shelves in the future. ",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Polar Science Cluster Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./ac_supra_glacial_lakes_mask/2025/2025-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2025-01-01T00:00:00Z",
+      "assets": [
+        "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/cogs/supra_glacial_lakes_mask.tif"
+      ]
+    },
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/supra_glacial_lakes_mask_style.json",
+      "type": "text/cog-styles",
+      "asset:keys": [
+        "supra_glacial_lakes_mask"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Supraglacial Lakes"
+    }
+  ],
+  "themes": [
+    "Antarctic"
+  ],
+  "eodash:mapProjection": {
+    "name": "EPSG:3031",
+    "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+    "extent": [
+      -3299207.53,
+      -3333134.03,
+      3299207.53,
+      3333134.03
+    ]
+  },
+  "eodash:proj4_def": {
+    "name": "EPSG:3031",
+    "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+    "extent": [
+      -3299207.53,
+      -3333134.03,
+      3299207.53,
+      3333134.03
+    ]
+  },
+  "endpointtype": "COG source",
+  "title": "Supraglacial Lakes",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -90,
+          180,
+          -60
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "reference_1": {
+      "href": "https://zenodo.org/record/5642755",
+      "type": "text/html",
+      "title": "Supraglacial lakes and channels in West Antarctica and Antarctic Peninsula during January 2017",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://essd.copernicus.org/articles/14/209/2022/",
+      "type": "text/html",
+      "title": "ESSD - An inventory of supraglacial lakes and channels across the West Antarctic Ice Sheet",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

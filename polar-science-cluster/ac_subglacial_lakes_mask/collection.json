@@ -1,0 +1,149 @@
+{
+  "type": "Collection",
+  "id": "ac_subglacial_lakes_mask",
+  "stac_version": "1.1.0",
+  "description": "Subglacial lake activity influences ice sheet flow, grounding line discharge and ice shelf basal melting. Although 146 active subglacial lakes have been detected in Antarctica via ice surface elevation change associated with their activity, only 36 fill-drain cycles have been observed worldwide, and knowledge of these mechanisms is limited. Here, we use a decade of CryoSat-2 radar altimetry to detect 85 active subglacial lakes in Antarctica, documenting 37 and 34 complete draining and filling events respectively. We delineate time-varying boundaries of subglacial lake activity and investigate their variability over time. Our observations increase the number of known active subglacial lakes in Antarctica by 58%, with six of these located within 8 km of the grounding zone. We observe five subglacial lake networks, with concurrent upstream drainage and downstream filling, and 25 clusters of lakes, improving our knowledge of interconnected subglacial hydrological pathways.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Polar Science Cluster Catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./ac_subglacial_lakes_mask/collection.json",
+      "type": "application/json",
+      "title": "Subglacial Lakes",
+      "endpointtype": "COG source",
+      "id": "ac_subglacial_lakes_mask",
+      "themes": [
+        "Antarctic"
+      ],
+      "eodash:mapProjection": {
+        "name": "EPSG:3031",
+        "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+        "extent": [
+          -3299207.53,
+          -3333134.03,
+          3299207.53,
+          3333134.03
+        ]
+      }
+    },
+    {
+      "rel": "xyz",
+      "href": "//s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "('image/jpeg',)",
+      "title": "EOxCloudless 2024",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2024"
+    },
+    {
+      "rel": "xyz",
+      "href": "//s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "('image/jpeg',)",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM"
+    },
+    {
+      "rel": "wms",
+      "href": "//sxcat-demo.eox.at/sxcat_maps/wms",
+      "type": "('image/png',)",
+      "title": "Terrain Light Stereographic South",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "sx-cat_ortho320500",
+      "wms:layers": "sx-cat_ortho320500",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }",
+      "eodash:proj4_def": {
+        "name": "ORTHO:320500",
+        "def": "+proj=ortho +lat_0=-90 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs"
+      }
+    },
+    {
+      "rel": "xyz",
+      "href": "//s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "('image/png',)",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "invisible"
+      ],
+      "id": "overlay_bright"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Polar Science Cluster Catalog"
+    }
+  ],
+  "themes": [
+    "Antarctic"
+  ],
+  "eodash:mapProjection": {
+    "name": "EPSG:3031",
+    "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+    "extent": [
+      -3299207.53,
+      -3333134.03,
+      3299207.53,
+      3333134.03
+    ]
+  },
+  "title": "Subglacial Lakes",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -90,
+          180,
+          -60
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "themes": [
+      "Antarctic"
+    ]
+  },
+  "assets": {
+    "reference_1": {
+      "href": "https://zenodo.org/records/16330565",
+      "type": "text/html",
+      "title": "Data for Detection of 85 new active subglacial lakes in Antarctica from a decade of CryoSat-2 data",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://www.nature.com/articles/s41467-025-63773-9",
+      "type": "text/html",
+      "title": "Detection of 85 new active subglacial lakes in Antarctica from a decade of CryoSat-2 data | Nature Communications",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}
