@@ -1,6 +1,6 @@
 {
   "Name": "ac_groundlines_date1",
-  "Title": "Grounding lines Date",
+  "Title": "Grounding Lines Year",
   "Description": "Grounding lines for the Antarctic Ice Sheet were derived using differential satellite synthetic aperture radar interferometry (DInSAR) data for the years 1992 to 2014",
   "Themes": ["Antarctic"],
   "References": [
@@ -24,7 +24,7 @@
       "Bbox": [-180, -90, 180, -60],
       "TimeEntries": [
         {
-          "Time": "20250101",
+          "Time": "2014",
           "Assets": [
             {
               "Identifier": "groundlines_date1",

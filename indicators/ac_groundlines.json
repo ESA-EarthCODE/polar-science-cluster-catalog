@@ -1,6 +1,6 @@
 {
   "Name": "ac_groundlines",
-  "Title": "MEaSUREs Antarctic Grounding Line from DInSAR",
+  "Title": "Grounding Lines from DInSAR",
   "Description": "Grounding lines for the Antarctic Ice Sheet were derived using differential satellite synthetic aperture radar interferometry (DInSAR) data for the years 1992 to 2014 from the Earth Remote Sensing Satellites 1 and 2 (ERS-1 and ERS-2), RADARSAT and RADARSAT-2, the Advanced Land Observing System (ALOS) PALSAR, COSMO Skymed, and Sentinel-1A.",
   "Themes": [
     "Antarctic"
@@ -19,7 +19,7 @@
       "Url": "https://nsidc.org/data/nsidc-0498/versions/2"
     }
   ],
-  "Collections": ["ac_groundlines_mask", "ac_groundlines_date1"],
+  "Collections": ["ac_groundlines_date1", "ac_groundlines_mask"],
   "MapProjection": {
     "name": "EPSG:3031",
     "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
