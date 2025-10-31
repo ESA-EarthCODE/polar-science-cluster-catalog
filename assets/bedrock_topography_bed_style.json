@@ -1,0 +1,52 @@
+{
+    "legend": {
+        "title": "Bed Topography [m]",
+        "range": [
+            "rgba(0, 0, 0, 1)",
+            "rgba(255, 255, 255, 1)"
+        ],
+        "domainProperties": ["vmin", "vmax"]
+    },
+    "variables": {
+        "vmin": -9000,
+        "vmax": 5000
+    },
+    "color": [
+        "interpolate",
+        ["linear"],
+        [
+            "/",
+            ["-", ["band", 1], ["var", "vmin"]],
+            ["-", ["var", "vmax"], ["var", "vmin"]]
+        ],
+        0,
+        [0, 0, 0, 1],
+        1,
+        [255, 255, 255, 1]
+    ],
+    "jsonform": {
+        "type": "object",
+        "title": "Data configuration",
+        "properties": {
+            "vminmax": {
+                "title": "Bed Topography [m]",
+                "type": "object",
+                "properties": {
+                    "vmin": {
+                        "type": "number",
+                        "minimum": -9000,
+                        "format": "range",
+                        "default": -5000
+                    },
+                    "vmax": {
+                        "type": "number",
+                        "maximum": 5000,
+                        "format": "range",
+                        "default": 9000
+                    }
+                },
+                "format": "minmax"
+            }
+        }
+    }
+}

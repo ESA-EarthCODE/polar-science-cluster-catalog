@@ -1,6 +1,6 @@
 {
     "legend": {
-        "title": "Basal Melt [m/y]",
+        "title": "Bed topography (ice thickness) error [m]",
         "range": [
             "rgba(255, 0, 0, 1)",
             "rgba(0, 0, 255, 1)"
@@ -8,26 +8,21 @@
         "domainProperties": ["vmin", "vmax"]
     },
     "variables": {
-        "vmin": -5,
-        "vmax": 4
+        "vmin": 0,
+        "vmax": 1000
     },
     "color": [
-        "case",
-        ["all", ["!=", ["band", 1], 0], [">", ["band", 1], -15]],
+        "interpolate",
+        ["linear"],
         [
-            "interpolate",
-            ["linear"],
-            [
-                "/",
-                ["-", ["band", 1], ["var", "vmin"]],
-                ["-", ["var", "vmax"], ["var", "vmin"]]
-            ],
-            0,
-            [255, 0, 0, 1],
-            1,
-            [0, 0, 255, 1]
+            "/",
+            ["-", ["band", 1], ["var", "vmin"]],
+            ["-", ["var", "vmax"], ["var", "vmin"]]
         ],
-        ["color", 0, 0, 0, 0]
+        0,
+        [255, 0, 0, 1],
+        1,
+        [0, 0, 255, 1]
     ],
     "jsonform": {
         "type": "object",
@@ -39,15 +34,15 @@
                 "properties": {
                     "vmin": {
                         "type": "number",
-                        "minimum": -5,
+                        "minimum": 0,
                         "format": "range",
-                        "default": -5
+                        "default": 0
                     },
                     "vmax": {
                         "type": "number",
-                        "maximum": 4,
+                        "maximum": 1000,
                         "format": "range",
-                        "default": 4
+                        "default": 1000
                     }
                 },
                 "format": "minmax"

@@ -1,6 +1,6 @@
 {
-  "Name": "ac_bedrock_topography_dataid",
-  "Title": "Input Data Source Id",
+  "Name": "ac_bedrock_topography_geoid",
+  "Title": "Geoid height difference from WGS 84 ellipsoid",
   "Description": "",
   "Themes": [
     "Antarctic"
@@ -18,7 +18,7 @@
   "Resources": [
     {
       "Name": "COG source",
-      "Style": "bedrock_topography_dataid_style.json",
+      "Style": "bedrock_topography_geoid_style.json",
       "Bbox": [
         -180,
         -90,
@@ -30,8 +30,8 @@
           "Time": "20250101",
           "Assets": [
             {
-              "Identifier": "bedrock_topography_dataid",
-              "File": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/cogs/bedrock_topography_dataid.tif"
+              "Identifier": "ac_bedrock_topography_geoid",
+              "File": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/cogs/bedrock_topography_geoid.tif"
             }
           ]
         }
@@ -47,17 +47,5 @@
     "name": "EPSG:3031",
     "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
     "extent": [-3299207.53, -3333134.03, 3299207.53, 3333134.03]
-  },
-  "Colorlegend": {
-      "title": "Input Data Source Id",
-      "range": [
-          "rgba(0, 0, 0, 0)",
-          "rgb(0, 0, 255)",
-          "rgb(255, 255, 0)",
-          "rgb(0, 255, 0)",
-          "rgb(0, 255, 255)"
-      ],
-      "scaleType": "categorical",
-      "domain": ["No data (0)", "REMA (1)", "Radar (2)", "Seismic (7)", "multibeam (10)"]
   }
 }

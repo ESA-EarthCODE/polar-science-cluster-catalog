@@ -49,15 +49,15 @@
     "extent": [-3299207.53, -3333134.03, 3299207.53, 3333134.03]
   },
   "Colorlegend": {
-      "title": "Input Data Source Id",
+      "title": "Ocean/ice/land mask",
       "range": [
-          "rgba(0, 0, 0, 0)",
           "rgb(0, 0, 255)",
-          "rgb(255, 255, 0)",
-          "rgb(0, 255, 0)",
+          "rgb(150, 150, 150)",
+          "rgb(54, 85, 117)",
+          "rgb(171, 221, 232)",
           "rgb(0, 255, 255)"
       ],
       "scaleType": "categorical",
-      "domain": ["No data (0)", "REMA (1)", "Radar (2)", "Seismic (7)", "multibeam (10)"]
+      "domain": ["Ocean (0)", "Ice free land (1)", "Grounded Ice (2)", "Floating Ice (3)", "Lake Vostok (4)"]
   }
 }
