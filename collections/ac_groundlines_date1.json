@@ -17,6 +17,7 @@
       "Url": "https://nsidc.org/data/nsidc-0498/versions/2"
     }
   ],
+  "Image": "ac_groundlines_date1.png",
   "Resources": [
     {
       "Name": "COG source",

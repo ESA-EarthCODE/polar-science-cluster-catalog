@@ -19,7 +19,6 @@
       "Url": "https://nsidc.org/data/nsidc-0498/versions/2"
     }
   ],
-  "Image": "ac_groundlines_date1.png",
   "Collections": ["ac_groundlines_date1", "ac_groundlines_mask"],
   "MapProjection": {
     "name": "EPSG:3031",

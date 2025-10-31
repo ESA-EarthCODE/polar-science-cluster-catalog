@@ -15,6 +15,7 @@
       "Url": "https://nsidc.org/data/nsidc-0756/versions/3"
     }
   ],
+  "Image": "ac_bedrock_topography.png",
   "Resources": [
     {
       "Name": "COG source",
