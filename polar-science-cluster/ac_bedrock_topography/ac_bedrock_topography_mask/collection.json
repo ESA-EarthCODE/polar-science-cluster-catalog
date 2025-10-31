@@ -1,6 +1,6 @@
 {
   "type": "Collection",
-  "id": "ac_bedrock_topography_dataid",
+  "id": "ac_bedrock_topography_mask",
   "stac_version": "1.1.0",
   "description": "",
   "links": [
@@ -12,7 +12,7 @@
     },
     {
       "rel": "item",
-      "href": "./ac_bedrock_topography_dataid/2025/2025-01-01T00:00:00Z.json",
+      "href": "./ac_bedrock_topography_mask/2025/2025-01-01T00:00:00Z.json",
       "type": "application/geo+json",
       "datetime": "2025-01-01T00:00:00Z",
       "assets": [
@@ -48,21 +48,21 @@
     ]
   },
   "eox:colorlegend": {
-    "title": "Input Data Source Id",
+    "title": "Ocean/ice/land mask",
     "range": [
-      "rgba(0, 0, 0, 0)",
       "rgb(0, 0, 255)",
-      "rgb(255, 255, 0)",
-      "rgb(0, 255, 0)",
+      "rgb(150, 150, 150)",
+      "rgb(54, 85, 117)",
+      "rgb(171, 221, 232)",
       "rgb(0, 255, 255)"
     ],
     "scaleType": "categorical",
     "domain": [
-      "No data (0)",
-      "REMA (1)",
-      "Radar (2)",
-      "Seismic (7)",
-      "multibeam (10)"
+      "Ocean (0)",
+      "Ice free land (1)",
+      "Grounded Ice (2)",
+      "Floating Ice (3)",
+      "Lake Vostok (4)"
     ]
   },
   "eodash:proj4_def": {
@@ -76,7 +76,7 @@
     ]
   },
   "endpointtype": "COG source",
-  "title": "Input Data Source",
+  "title": "Ocean ice land mask",
   "extent": {
     "spatial": {
       "bbox": [
