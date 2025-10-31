@@ -42,10 +42,10 @@
   "links": [
     {
       "rel": "style",
-      "href": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/bedrock_topography_dataid_style.json",
+      "href": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/bedrock_topography_geoid_style.json",
       "type": "text/cog-styles",
       "asset:keys": [
-        "bedrock_topography_dataid"
+        "ac_bedrock_topography_geoid"
       ]
     },
     {
@@ -58,18 +58,18 @@
       "rel": "collection",
       "href": "../../collection.json",
       "type": "application/json",
-      "title": "Input Data Source Id"
+      "title": "Geoid height difference from WGS 84 ellipsoid"
     },
     {
       "rel": "parent",
       "href": "../../collection.json",
       "type": "application/json",
-      "title": "Input Data Source Id"
+      "title": "Geoid height difference from WGS 84 ellipsoid"
     }
   ],
   "assets": {
-    "bedrock_topography_dataid": {
-      "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/cogs/bedrock_topography_dataid.tif",
+    "ac_bedrock_topography_geoid": {
+      "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/cogs/bedrock_topography_geoid.tif",
       "type": "image/tiff",
       "eodash:proj4_def": {
         "name": "EPSG:3031",
@@ -86,7 +86,7 @@
       ]
     }
   },
-  "collection": "ac_bedrock_topography_dataid",
+  "collection": "ac_bedrock_topography_geoid",
   "eodash:proj4_def": {
     "name": "EPSG:3031",
     "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",

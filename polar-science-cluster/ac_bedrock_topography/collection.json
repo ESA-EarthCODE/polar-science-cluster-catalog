@@ -14,9 +14,93 @@
       "rel": "child",
       "href": "./ac_bedrock_topography_dataid/collection.json",
       "type": "application/json",
-      "title": "Bedrock topography Input Data Source Id",
+      "title": "Input Data Source Id",
       "endpointtype": "COG source",
       "id": "ac_bedrock_topography_dataid",
+      "themes": [
+        "Antarctic"
+      ],
+      "eodash:mapProjection": {
+        "name": "EPSG:3031",
+        "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+        "extent": [
+          -3299207.53,
+          -3333134.03,
+          3299207.53,
+          3333134.03
+        ]
+      }
+    },
+    {
+      "rel": "child",
+      "href": "./ac_bedrock_topography_bed/collection.json",
+      "type": "application/json",
+      "title": "Bed topography",
+      "endpointtype": "COG source",
+      "id": "ac_bedrock_topography_bed",
+      "themes": [
+        "Antarctic"
+      ],
+      "eodash:mapProjection": {
+        "name": "EPSG:3031",
+        "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+        "extent": [
+          -3299207.53,
+          -3333134.03,
+          3299207.53,
+          3333134.03
+        ]
+      }
+    },
+    {
+      "rel": "child",
+      "href": "./ac_bedrock_topography_errbed/collection.json",
+      "type": "application/json",
+      "title": "Bed topography (ice thickness) error",
+      "endpointtype": "COG source",
+      "id": "ac_bedrock_topography_errbed",
+      "themes": [
+        "Antarctic"
+      ],
+      "eodash:mapProjection": {
+        "name": "EPSG:3031",
+        "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+        "extent": [
+          -3299207.53,
+          -3333134.03,
+          3299207.53,
+          3333134.03
+        ]
+      }
+    },
+    {
+      "rel": "child",
+      "href": "./ac_bedrock_topography_firn/collection.json",
+      "type": "application/json",
+      "title": "Firn air content",
+      "endpointtype": "COG source",
+      "id": "ac_bedrock_topography_firn",
+      "themes": [
+        "Antarctic"
+      ],
+      "eodash:mapProjection": {
+        "name": "EPSG:3031",
+        "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+        "extent": [
+          -3299207.53,
+          -3333134.03,
+          3299207.53,
+          3333134.03
+        ]
+      }
+    },
+    {
+      "rel": "child",
+      "href": "./ac_bedrock_topography_geoid/collection.json",
+      "type": "application/json",
+      "title": "Geoid height difference from WGS 84 ellipsoid",
+      "endpointtype": "COG source",
+      "id": "ac_bedrock_topography_geoid",
       "themes": [
         "Antarctic"
       ],
