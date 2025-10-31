@@ -1,8 +1,8 @@
 {
   "type": "Collection",
-  "id": "antarctica_cube_basal_melt",
+  "id": "ac_bedrock_topography_dataid",
   "stac_version": "1.1.0",
-  "description": "N/A",
+  "description": "",
   "links": [
     {
       "rel": "root",
@@ -12,11 +12,11 @@
     },
     {
       "rel": "child",
-      "href": "./antarctica_cube_basal_melt/collection.json",
+      "href": "./ac_bedrock_topography_dataid/collection.json",
       "type": "application/json",
-      "title": "Antarctica Cube Basal Melt variable",
+      "title": "Bedrock topography Input Data Source Id",
       "endpointtype": "COG source",
-      "id": "antarctica_cube_basal_melt",
+      "id": "ac_bedrock_topography_dataid",
       "themes": [
         "Antarctic"
       ],
@@ -118,7 +118,25 @@
       3333134.03
     ]
   },
-  "title": "Antarctica Cube Basal Melt variable",
+  "eox:colorlegend": {
+    "title": "Input Data Source Id",
+    "range": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(0, 0, 255)",
+      "rgb(255, 255, 0)",
+      "rgb(0, 255, 0)",
+      "rgb(0, 255, 255)"
+    ],
+    "scaleType": "categorical",
+    "domain": [
+      "No data (0)",
+      "REMA (1)",
+      "Radar (2)",
+      "Seismic (7)",
+      "multibeam (10)"
+    ]
+  },
+  "title": "Bedrock topography Input Data Source Id",
   "extent": {
     "spatial": {
       "bbox": [
@@ -144,5 +162,23 @@
     "themes": [
       "Antarctic"
     ]
+  },
+  "assets": {
+    "reference_1": {
+      "href": "https://opensciencedata.esa.int/products/bedrock-topography-antarctica-bedmachine/collection",
+      "type": "text/html",
+      "title": "Original Data Source | ESA Open Science Catalog",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://nsidc.org/data/nsidc-0756/versions/3",
+      "type": "text/html",
+      "title": "MEaSUREs BedMachine Antarctica, Version 3 | National Snow and Ice Data Center",
+      "roles": [
+        "metadata"
+      ]
+    }
   }
 }

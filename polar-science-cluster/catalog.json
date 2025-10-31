@@ -12,10 +12,10 @@
     },
     {
       "rel": "child",
-      "href": "./antarctica_cube_basal_melt/collection.json",
+      "href": "./ac_bedrock_topography_dataid/collection.json",
       "type": "application/json",
-      "title": "Antarctica Cube Basal Melt variable",
-      "id": "antarctica_cube_basal_melt",
+      "title": "Bedrock topography Input Data Source Id",
+      "id": "ac_bedrock_topography_dataid",
       "themes": [
         "Antarctic"
       ],
