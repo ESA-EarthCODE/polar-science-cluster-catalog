@@ -8,6 +8,6 @@
   "assets_endpoint": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets",
   "collections": [
     "ac_basal_melt",
-    "ac_bedrock_topography_dataid"
+    "ac_bedrock_topography"
   ]
 }
