@@ -29,7 +29,7 @@
         "title": "Data configuration",
         "properties": {
             "vminmax": {
-                "title": "Bed Topography [m]",
+                "title": " ",
                 "type": "object",
                 "properties": {
                     "vmin": {

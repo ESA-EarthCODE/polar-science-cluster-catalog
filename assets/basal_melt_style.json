@@ -34,7 +34,7 @@
         "title": "Data configuration",
         "properties": {
             "vminmax": {
-                "title": "",
+                "title": " ",
                 "type": "object",
                 "properties": {
                     "vmin": {
