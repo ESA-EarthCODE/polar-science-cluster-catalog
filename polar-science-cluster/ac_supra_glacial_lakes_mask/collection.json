@@ -101,15 +101,25 @@
       3333134.03
     ]
   },
+  "eox:colorlegend": {
+    "title": "Mask",
+    "range": [
+      "rgb(0, 0, 0)"
+    ],
+    "scaleType": "categorical",
+    "domain": [
+      "supraglacial lake"
+    ]
+  },
   "title": "Supraglacial Lakes",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -180,
+          -50,
+          -85,
           -90,
-          180,
-          -60
+          -75
         ]
       ]
     },

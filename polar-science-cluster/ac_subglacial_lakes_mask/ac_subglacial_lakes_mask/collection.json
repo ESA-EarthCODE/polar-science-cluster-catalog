@@ -47,6 +47,16 @@
       3333134.03
     ]
   },
+  "eox:colorlegend": {
+    "title": "Mask",
+    "range": [
+      "rgb(0, 0, 0)"
+    ],
+    "scaleType": "categorical",
+    "domain": [
+      "subglacial lake"
+    ]
+  },
   "eodash:proj4_def": {
     "name": "EPSG:3031",
     "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
@@ -63,10 +73,10 @@
     "spatial": {
       "bbox": [
         [
-          -180,
+          -50,
+          -85,
           -90,
-          180,
-          -60
+          -75
         ]
       ]
     },
