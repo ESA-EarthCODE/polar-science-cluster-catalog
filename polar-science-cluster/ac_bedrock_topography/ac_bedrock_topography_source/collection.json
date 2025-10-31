@@ -1,6 +1,6 @@
 {
   "type": "Collection",
-  "id": "ac_bedrock_topography_dataid",
+  "id": "ac_bedrock_topography_source",
   "stac_version": "1.1.0",
   "description": "",
   "links": [
@@ -12,36 +12,19 @@
     },
     {
       "rel": "item",
-      "href": "./ac_bedrock_topography_dataid/2025/2025-01-01T00:00:00Z.json",
+      "href": "./ac_bedrock_topography_source/2025/2025-01-01T00:00:00Z.json",
       "type": "application/geo+json",
       "datetime": "2025-01-01T00:00:00Z",
       "assets": [
-        "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/cogs/bedrock_topography_dataid.tif"
+        "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/cogs/bedrock_topography_source.tif"
       ]
     },
     {
       "rel": "style",
-      "href": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/bedrock_topography_dataid_style.json",
+      "href": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/bedrock_topography_source_style.json",
       "type": "text/cog-styles",
       "asset:keys": [
-        "bedrock_topography_dataid"
-      ]
-    },
-    {
-      "rel": "item",
-      "href": "./ac_bedrock_topography_dataid/2025/2025-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2025-01-01T00:00:00Z",
-      "assets": [
-        "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/cogs/bedrock_topography_dataid.tif"
-      ]
-    },
-    {
-      "rel": "style",
-      "href": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/bedrock_topography_dataid_style.json",
-      "type": "text/cog-styles",
-      "asset:keys": [
-        "bedrock_topography_dataid"
+        "bedrock_topography_source"
       ]
     },
     {
@@ -65,21 +48,27 @@
     ]
   },
   "eox:colorlegend": {
-    "title": "Ocean/ice/land mask",
+    "title": "Output Data Source Id",
     "range": [
       "rgb(0, 0, 255)",
-      "rgb(150, 150, 150)",
-      "rgb(54, 85, 117)",
-      "rgb(171, 221, 232)",
+      "rgb(255, 255, 0)",
+      "rgb(255, 0, 0)",
+      "rgb(255, 0, 255)",
+      "rgb(230, 230, 230)",
+      "rgb(120, 120, 120)",
+      "rgb(0, 255, 0)",
       "rgb(0, 255, 255)"
     ],
     "scaleType": "categorical",
     "domain": [
-      "Ocean (0)",
-      "Ice free land (1)",
-      "Grounded Ice (2)",
-      "Floating Ice (3)",
-      "Lake Vostok (4)"
+      "REMA/IBCSO V2 (1)",
+      "Mass Conservation (2)",
+      "Interpolation (3)",
+      "Hydrostatic (4)",
+      "Streamline Diffusion (5)",
+      "Gravity (6)",
+      "Seismic (7)",
+      "multibeam (10)"
     ]
   },
   "eodash:proj4_def": {
@@ -93,7 +82,7 @@
     ]
   },
   "endpointtype": "COG source",
-  "title": "Input Data Source",
+  "title": "Output Data Source",
   "extent": {
     "spatial": {
       "bbox": [

@@ -1,6 +1,6 @@
 {
   "type": "Collection",
-  "id": "ac_bedrock_topography_dataid",
+  "id": "ac_bedrock_topography_thickness",
   "stac_version": "1.1.0",
   "description": "",
   "links": [
@@ -12,36 +12,19 @@
     },
     {
       "rel": "item",
-      "href": "./ac_bedrock_topography_dataid/2025/2025-01-01T00:00:00Z.json",
+      "href": "./ac_bedrock_topography_thickness/2025/2025-01-01T00:00:00Z.json",
       "type": "application/geo+json",
       "datetime": "2025-01-01T00:00:00Z",
       "assets": [
-        "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/cogs/bedrock_topography_dataid.tif"
+        "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/cogs/bedrock_topography_thickness.tif"
       ]
     },
     {
       "rel": "style",
-      "href": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/bedrock_topography_dataid_style.json",
+      "href": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/bedrock_topography_thickness_style.json",
       "type": "text/cog-styles",
       "asset:keys": [
-        "bedrock_topography_dataid"
-      ]
-    },
-    {
-      "rel": "item",
-      "href": "./ac_bedrock_topography_dataid/2025/2025-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2025-01-01T00:00:00Z",
-      "assets": [
-        "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/cogs/bedrock_topography_dataid.tif"
-      ]
-    },
-    {
-      "rel": "style",
-      "href": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/bedrock_topography_dataid_style.json",
-      "type": "text/cog-styles",
-      "asset:keys": [
-        "bedrock_topography_dataid"
+        "ac_bedrock_topography_thickness"
       ]
     },
     {
@@ -64,24 +47,6 @@
       3333134.03
     ]
   },
-  "eox:colorlegend": {
-    "title": "Ocean/ice/land mask",
-    "range": [
-      "rgb(0, 0, 255)",
-      "rgb(150, 150, 150)",
-      "rgb(54, 85, 117)",
-      "rgb(171, 221, 232)",
-      "rgb(0, 255, 255)"
-    ],
-    "scaleType": "categorical",
-    "domain": [
-      "Ocean (0)",
-      "Ice free land (1)",
-      "Grounded Ice (2)",
-      "Floating Ice (3)",
-      "Lake Vostok (4)"
-    ]
-  },
   "eodash:proj4_def": {
     "name": "EPSG:3031",
     "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
@@ -93,7 +58,7 @@
     ]
   },
   "endpointtype": "COG source",
-  "title": "Input Data Source",
+  "title": "Ice thickness",
   "extent": {
     "spatial": {
       "bbox": [
