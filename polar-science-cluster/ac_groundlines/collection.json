@@ -1,6 +1,6 @@
 {
   "type": "Collection",
-  "id": "ac_groundlines_sensor",
+  "id": "ac_groundlines",
   "stac_version": "1.1.0",
   "description": "Grounding lines for the Antarctic Ice Sheet were derived using differential satellite synthetic aperture radar interferometry (DInSAR) data for the years 1992 to 2014 from the Earth Remote Sensing Satellites 1 and 2 (ERS-1 and ERS-2), RADARSAT and RADARSAT-2, the Advanced Land Observing System (ALOS) PALSAR, COSMO Skymed, and Sentinel-1A.",
   "links": [
@@ -12,11 +12,32 @@
     },
     {
       "rel": "child",
-      "href": "./ac_groundlines_sensor/collection.json",
+      "href": "./ac_groundlines_mask/collection.json",
       "type": "application/json",
       "title": "Antarctica Groundlines sensor",
       "endpointtype": "COG source",
-      "id": "ac_groundlines_sensor",
+      "id": "ac_groundlines_mask",
+      "themes": [
+        "Antarctic"
+      ],
+      "eodash:mapProjection": {
+        "name": "EPSG:3031",
+        "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+        "extent": [
+          -3299207.53,
+          -3333134.03,
+          3299207.53,
+          3333134.03
+        ]
+      }
+    },
+    {
+      "rel": "child",
+      "href": "./ac_groundlines_date1/collection.json",
+      "type": "application/json",
+      "title": "Grounding lines Date",
+      "endpointtype": "COG source",
+      "id": "ac_groundlines_date1",
       "themes": [
         "Antarctic"
       ],
@@ -101,27 +122,7 @@
       3333134.03
     ]
   },
-  "eox:colorlegend": {
-    "title": "Groundlines sensor",
-    "range": [
-      "rgb(0, 0, 255)",
-      "rgb(255, 255, 0)",
-      "rgb(0, 255, 0)",
-      "rgb(255, 0, 255)",
-      "rgb(255, 0, 0)",
-      "rgb(0, 255, 255)"
-    ],
-    "scaleType": "categorical",
-    "domain": [
-      "ERS 1, 2",
-      "RADARSAT-1",
-      "RADARSAT-2",
-      "PALSAR",
-      "COSMO SkyMed",
-      "Sentinel-1A"
-    ]
-  },
-  "title": "Antarctica Groundlines sensor",
+  "title": "MEaSUREs Antarctic Grounding Line from DInSAR",
   "extent": {
     "spatial": {
       "bbox": [

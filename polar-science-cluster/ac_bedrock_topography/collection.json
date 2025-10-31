@@ -12,27 +12,6 @@
     },
     {
       "rel": "child",
-      "href": "./ac_bedrock_topography_dataid/collection.json",
-      "type": "application/json",
-      "title": "Input Data Source",
-      "endpointtype": "COG source",
-      "id": "ac_bedrock_topography_dataid",
-      "themes": [
-        "Antarctic"
-      ],
-      "eodash:mapProjection": {
-        "name": "EPSG:3031",
-        "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
-        "extent": [
-          -3299207.53,
-          -3333134.03,
-          3299207.53,
-          3333134.03
-        ]
-      }
-    },
-    {
-      "rel": "child",
       "href": "./ac_bedrock_topography_bed/collection.json",
       "type": "application/json",
       "title": "Bed topography",
@@ -101,48 +80,6 @@
       "title": "Geoid height difference from WGS 84 ellipsoid",
       "endpointtype": "COG source",
       "id": "ac_bedrock_topography_geoid",
-      "themes": [
-        "Antarctic"
-      ],
-      "eodash:mapProjection": {
-        "name": "EPSG:3031",
-        "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
-        "extent": [
-          -3299207.53,
-          -3333134.03,
-          3299207.53,
-          3333134.03
-        ]
-      }
-    },
-    {
-      "rel": "child",
-      "href": "./ac_bedrock_topography_mask/collection.json",
-      "type": "application/json",
-      "title": "Ocean ice land mask",
-      "endpointtype": "COG source",
-      "id": "ac_bedrock_topography_mask",
-      "themes": [
-        "Antarctic"
-      ],
-      "eodash:mapProjection": {
-        "name": "EPSG:3031",
-        "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
-        "extent": [
-          -3299207.53,
-          -3333134.03,
-          3299207.53,
-          3333134.03
-        ]
-      }
-    },
-    {
-      "rel": "child",
-      "href": "./ac_bedrock_topography_source/collection.json",
-      "type": "application/json",
-      "title": "Output Data Source",
-      "endpointtype": "COG source",
-      "id": "ac_bedrock_topography_source",
       "themes": [
         "Antarctic"
       ],

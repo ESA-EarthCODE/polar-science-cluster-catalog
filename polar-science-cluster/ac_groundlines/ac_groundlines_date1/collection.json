@@ -1,8 +1,8 @@
 {
   "type": "Collection",
-  "id": "ac_bedrock_topography_source",
+  "id": "ac_groundlines_date1",
   "stac_version": "1.1.0",
-  "description": "",
+  "description": "Grounding lines for the Antarctic Ice Sheet were derived using differential satellite synthetic aperture radar interferometry (DInSAR) data for the years 1992 to 2014",
   "links": [
     {
       "rel": "root",
@@ -12,26 +12,26 @@
     },
     {
       "rel": "item",
-      "href": "./ac_bedrock_topography_source/2025/2025-01-01T00:00:00Z.json",
+      "href": "./ac_groundlines_date1/2025/2025-01-01T00:00:00Z.json",
       "type": "application/geo+json",
       "datetime": "2025-01-01T00:00:00Z",
       "assets": [
-        "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/cogs/bedrock_topography_source.tif"
+        "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/antarctica_cube/cogs/groundlines_date1.tif"
       ]
     },
     {
       "rel": "style",
-      "href": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/bedrock_topography_source_style.json",
+      "href": "https://raw.githubusercontent.com/ESA-EarthCODE/polar-science-cluster-catalog/main/assets/groundlines_date1_style.json",
       "type": "text/cog-styles",
       "asset:keys": [
-        "bedrock_topography_source"
+        "groundlines_date1"
       ]
     },
     {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Bedrock topography"
+      "title": "MEaSUREs Antarctic Grounding Line from DInSAR"
     }
   ],
   "themes": [
@@ -48,27 +48,35 @@
     ]
   },
   "eox:colorlegend": {
-    "title": "Output Data Source Id",
+    "title": "Grounding lines year",
     "range": [
-      "rgb(0, 0, 255)",
-      "rgb(255, 255, 0)",
-      "rgb(255, 0, 0)",
-      "rgb(255, 0, 255)",
-      "rgb(230, 230, 230)",
-      "rgb(120, 120, 120)",
-      "rgb(0, 255, 0)",
-      "rgb(0, 255, 255)"
+      "rgb(222, 0, 0)",
+      "rgb(250,142,0)",
+      "rgb(232,204,0)",
+      "rgb(181,244,0)",
+      "rgb(117,255,0)",
+      "rgb(0,255,0)",
+      "rgb(0,200,68)",
+      "rgb(0,182,142)",
+      "rgb(0,171,178)",
+      "rgb(50,77,197)",
+      "rgb(76,0,216)",
+      "rgb(81,0,210)"
     ],
     "scaleType": "categorical",
     "domain": [
-      "REMA/IBCSO V2 (1)",
-      "Mass Conservation (2)",
-      "Interpolation (3)",
-      "Hydrostatic (4)",
-      "Streamline Diffusion (5)",
-      "Gravity (6)",
-      "Seismic (7)",
-      "multibeam (10)"
+      1992,
+      1994,
+      1995,
+      1996,
+      1999,
+      2000,
+      2007,
+      2008,
+      2009,
+      2011,
+      2013,
+      2014
     ]
   },
   "eodash:proj4_def": {
@@ -82,7 +90,7 @@
     ]
   },
   "endpointtype": "COG source",
-  "title": "Output Data Source",
+  "title": "Grounding lines Date",
   "extent": {
     "spatial": {
       "bbox": [
@@ -106,17 +114,25 @@
   "license": "other",
   "assets": {
     "reference_1": {
-      "href": "https://opensciencedata.esa.int/products/bedrock-topography-antarctica-bedmachine/collection",
+      "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3291177478-NSIDC_CPRD",
       "type": "text/html",
-      "title": "Original Data Source | ESA Open Science Catalog",
+      "title": "Original Data Source",
       "roles": [
         "metadata"
       ]
     },
     "reference_2": {
-      "href": "https://nsidc.org/data/nsidc-0756/versions/3",
+      "href": "https://nsidc.org/sites/default/files/nsidc-0498-v002-userguide_1.pdf",
       "type": "text/html",
-      "title": "MEaSUREs BedMachine Antarctica, Version 3 | National Snow and Ice Data Center",
+      "title": "User Guide",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://nsidc.org/data/nsidc-0498/versions/2",
+      "type": "text/html",
+      "title": "Dataset Description",
       "roles": [
         "metadata"
       ]
