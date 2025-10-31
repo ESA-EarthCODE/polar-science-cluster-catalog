@@ -31,7 +31,7 @@
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Bedrock topography Input Data Source Id"
+      "title": "Bedrock topography"
     }
   ],
   "themes": [

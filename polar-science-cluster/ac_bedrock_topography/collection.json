@@ -1,8 +1,8 @@
 {
   "type": "Collection",
-  "id": "ac_bedrock_topography_dataid",
+  "id": "ac_bedrock_topography",
   "stac_version": "1.1.0",
-  "description": "",
+  "description": "This data set contains a bed topography/bathymetry map of Antarctica deduced by subtracting the ice thickness from the surface elevation taken from the Reference Elevation Model of Antarctica (REMA). Ice thickness is derived via mass conservation, streamline diffusion, and other methods. Ice thicknesss and ice surface elevations are reported in ice equivalent (heights above mean sea level using the EIGEN-6C4 geoid) to account for firn air content. Additional parameters include errors in the ice thicknesses/bed estimates; the firn correction parameter; geoid height difference from the WGS84 ellipsoid; and an ice/ocean/land mask. A source map is also provided that shows where each method was applied",
   "links": [
     {
       "rel": "root",
@@ -118,25 +118,7 @@
       3333134.03
     ]
   },
-  "eox:colorlegend": {
-    "title": "Input Data Source Id",
-    "range": [
-      "rgba(0, 0, 0, 0)",
-      "rgb(0, 0, 255)",
-      "rgb(255, 255, 0)",
-      "rgb(0, 255, 0)",
-      "rgb(0, 255, 255)"
-    ],
-    "scaleType": "categorical",
-    "domain": [
-      "No data (0)",
-      "REMA (1)",
-      "Radar (2)",
-      "Seismic (7)",
-      "multibeam (10)"
-    ]
-  },
-  "title": "Bedrock topography Input Data Source Id",
+  "title": "Bedrock topography",
   "extent": {
     "spatial": {
       "bbox": [

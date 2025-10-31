@@ -12,10 +12,10 @@
     },
     {
       "rel": "child",
-      "href": "./ac_bedrock_topography_dataid/collection.json",
+      "href": "./ac_bedrock_topography/collection.json",
       "type": "application/json",
-      "title": "Bedrock topography Input Data Source Id",
-      "id": "ac_bedrock_topography_dataid",
+      "title": "Bedrock topography",
+      "id": "ac_bedrock_topography",
       "themes": [
         "Antarctic"
       ],
